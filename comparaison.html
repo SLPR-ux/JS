@@ -20,6 +20,36 @@
         } else {
             console.log("a est égal à b");
         }
+
+        function addition(a, b) {
+            let c = a + b;
+            return c;
+        }
+        let resultat = addition(5, 7);
+        console.log(resultat);
+
+        function affiche(a) {
+            console.log(a);
+        }
+        affiche("au revoir");
+
+        function simple() {
+            console.log("je suis une fonction simple");
+        }
+        simple();
+
+        // definir une fonction pour comparer 2 nombres
+        function compare(a, b) {
+            if (a < b) {
+                return "a est plus petit que b";
+            } else if (a > b) {
+                return "a est plus grand que b";
+            } else {
+                return "a est égal à b";
+            }
+        }
+        let resultatComparaison = compare(5, 7);
+        console.log(resultatComparaison);
     </script>
 </body>
 
