@@ -12,21 +12,16 @@
         const nombreMystere = 7;
 
         let nombre = prompt("Entrez votre choix dit monsieur choix avec le choix");
-        alert(nombre + " est votre nombre?");
 
-        alert("et bah");
 
         if (nombre == nombreMystere) {
             alert("Bravo! Vous avez trouvé le nombre mystère!");
-            alert("tricheur");
         } else {
             alert("Désolé! Vous n'avez pas trouvé le nombre mystère.");
-            alert("cheh");
         }
 
         let rejouer = prompt("Voulez-vous rejouer? (oui/non)");
         if (rejouer === "oui") {
-            alert("AAH JE LE SAVAIS TU");
             window.location.reload();
         } else {
 
@@ -35,21 +30,16 @@
                 // faire une boucle pour retourner au choix du nombre tant que il trouve pas
                 while (nombre != nombreMystere) {
                     nombre = prompt("Entrez votre choix dit monsieur choix avec le choix");
-                    alert(nombre + " est votre nombre?");
                     if (nombre > nombreMystere) {
                         alert("C'est moins!");
                     } else if (nombre < nombreMystere) {
                         alert("C'est plus!");
                     } else if (nombre === nombreMystere) {
                         alert("Bravo! Vous avez trouvé le nombre mystère!");
-                        alert("tricheur");
+                        break;
 
                     }
-                    break;
                 }
-                alert("Au revoir!");
-            } else {
-                alert("Au revoir!");
             }
         }
     </script>
