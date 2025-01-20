@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeur absolue</title>
+</head>
+<body>
+    <script>
+        function abs(x) {
+            if (x < 0) {
+                return -x;
+            } else {
+                return x;
+            }
+        }
+        let nombre = prompt("Entrez un nombre");
+        let resultat = abs(nombre);
+        alert("La valeur absolue de " + nombre + " est " + resultat);
+    </script>
+</body>
+</html>
