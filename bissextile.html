@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>années bissextile</h1>
+    <script>
+        function verifAnnee() {
+            let annee = prompt('Saisir une année');
+            // verifie si annee est un entier sans isNan
+
+
+            if (annee === '') {
+                alert('Veuillez saisir une année.');
+                return;
+            }
+            if (annee % 4 === 0) {
+                if (annee % 100 === 0) {
+                    if (annee % 400 === 0) {
+                        alert(annee + 'est une année bissextile.');
+                    } else {
+                        alert(annee + 'n est pas une année bissextile.');
+                    }
+                } else {
+                    alert(annee + 'n est une année bissextile.');
+                }
+            } else {
+                alert(annee + 'n est pas une année bissextile.');
+            }
+        }
+        while (true) {
+            verifAnnee();
+        }
+    </script>
+</body>
+
+</html>

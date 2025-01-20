@@ -41,15 +41,26 @@
         // definir une fonction pour comparer 2 nombres
         function compare(a, b) {
             if (a < b) {
-                return "a est plus petit que b";
+                return b, " est plus grand";
             } else if (a > b) {
-                return "a est plus grand que b";
+                return a, " est plus grand";
             } else {
-                return "a est égal à b";
+                return "il sont egaux";
             }
         }
         let resultatComparaison = compare(5, 7);
         console.log(resultatComparaison);
+
+
+        //creer une fonction max qui prend deux parametres et qui renvoie le plus grand des deux
+        function max(a, b) {
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+        }
+        
     </script>
 </body>
 
