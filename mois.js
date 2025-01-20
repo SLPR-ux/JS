@@ -2,6 +2,8 @@ let nbrmois = ['','janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet
 function mois(i) {
     if (i >= 0 && i <= 12) {
         return nbrmois[i];
+    } else {
+        return 'mois invalide';
     }
 }
 
