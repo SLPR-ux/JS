@@ -1,12 +1,13 @@
-let nbrmois = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'decembre'];
 function mois(i) {
-    if (i >= 0 && i <= 12) {
-        return nbrmois[i-1];
+
+    let nbrmois = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'decembre'];
+    if (i>=0 && i<=nbrmois.length) {
+        return (nbrmois[i-1]);
     } else {
-        return 'mois invalide';
+        return "Erreur : le mois n'existe pas";
     }
+    
 }
 
 
-
-console.log(mois(12)); //decembre
+console.log(mois(15)); //decembre
