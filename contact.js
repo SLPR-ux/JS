@@ -27,14 +27,3 @@ class contact {
         }
         return collection;
     }
-
-
-    //Afficher un listing des contacts
-    static afficherCollection(collection) {
-        collection.forEach((contact) => {
-            contact.toString();
-        });
-    }
-}
-
-afficherCollection(collection);
