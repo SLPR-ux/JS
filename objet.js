@@ -26,7 +26,7 @@ let compte = {
 }
 
 //test
-
+compte.afficher();
 compte.afficher();
 compte.crediter(1000);
 compte.debiter(500);
