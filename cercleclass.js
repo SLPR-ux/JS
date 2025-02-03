@@ -20,7 +20,3 @@ console.log('Diametre :', cercle1.diametre());
 console.log('Aire :', cercle1.aire());
 
 console.log('Perimetre :', cercle1.perimetre());
-
-console.log('Surface du cercle 5 :', cercle.surface(5));
-
-console.log('Volume du cercle 5 :', cercle.volume(5, 10));
