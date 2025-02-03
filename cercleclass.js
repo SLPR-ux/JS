@@ -11,12 +11,6 @@ class cercle {
     perimetre(){
         return 2 * Math.PI * this.rayon;
     }
-    static surface(rayon){
-        return Math.PI * Math.pow(rayon, 2);
-    }
-    static volume(rayon, hauteur){
-        return (1/3) * Math.PI * Math.pow(rayon, 3) * hauteur;
-    }
 }
 
 let cercle1 = new cercle(5);
