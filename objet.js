@@ -24,3 +24,10 @@ let compte = {
         }
     }
 }
+
+//test
+
+compte.afficher();
+compte.crediter(1000);
+compte.debiter(500);
+compte.debiter(2000);
