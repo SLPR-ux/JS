@@ -17,17 +17,19 @@ let livre = {
     emprunter: function() {
         if (this.empruntable) {
             console.log("Le livre a été emprunté");
+            this.empruntable = false;
         } else {
-            console.log("Le livre ne peut pas être emprunté");
+            console.log("Le livre n'est pas disponible");
         }
     },
     
     rendre: function() {
-        if (this.empruntable) {
+        if (!this.empruntable) {
             console.log("Le livre a été rendu");
         } else {
-            console.log("Le livre n'a pas été rendu");
+            console.log("Le livre était déja disponible");
         }
+        this.empruntable = true;
     }
 
 }
@@ -35,4 +37,5 @@ let livre = {
 livre.afficher();
 console.log(livre.estLong());
 console.log(livre.emprunter());
+console.log(livre.emprunter());//doit retourner le livre n'est pas disponible
 console.log(livre.rendre());
