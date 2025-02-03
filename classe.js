@@ -1,9 +1,9 @@
 class livre {
-    constructor() {
-        this.titre = "God Of War: The Ghost of Sparta";
-        this.auteur = "Zeusonith de Odin";
-        this.nbPages = 710;
-        this.empruntable = true;
+    constructor(titre, auteur , nbPages, empruntable) {
+        this.titre = titre;
+        this.auteur = auteur;
+        this.nbPages = nbPages;
+        this.empruntable = empruntable;
     }
 
     afficher() {
@@ -15,11 +15,12 @@ class livre {
 
 }
 
-let l1 = new livre();
-let l2 = new livre();
-let l3 = new livre();
-let l4 = new livre();
-let l5 = new livre();
+let l1 = new Livre("La Cité des neiges", "Victor Hugo", 182, true);
+
+let l2 = new Livre("1984", "George Orwell", 328, false);
+
+let l3 = new Livre("Pride and Prejudice", "Jane Austen", 196, true);
+
 
 l1.afficher();
 l2.afficher();
