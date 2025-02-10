@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One page site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #002468;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: rgb(0, 53, 112);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #45a049;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        div {
+            padding: 20px;
+            text-align: center;
+            background-color: #02f3f3;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn">Accueil</button>    
+    <button id="btn1">Produits</button>    
+    <button id="btn2">Contact</button>
+    <div>
+        <h1>Page d'accueil</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod felis non ex dictum, ut faucibus neque vestibulum. Nullam facilisis, diam a semper gravida, ipsum dolor egestas nisi, at aliquet ligula neque ut velit. Sed auctor, felis vel sagittis lobortis, arcu nisi ullamcorper massa, vel dignissim neque enim vitae neque. Sed vel odio vel enim volutpat hendrerit vel id nunc. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod felis non ex dictum, ut faucibus neque vestibulum. Nullam facilisis, diam a semper gravida, ipsum dolor egestas nisi, at aliquet ligula neque ut velit. Sed auctor, felis vel sagittis lobortis, arcu nisi ullamcorper massa, vel dignissim neque enim vitae neque. Sed vel odio vel enim volutpat hendrer </p>
+
+    </div>
+    <div>
+        <h1>Page des produits</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod felis non ex dictum, ut faucibus neque vestibulum. Nullam facilisis, diam a semper gravida, ipsum dolor egestas nisi, at aliquet ligula neque ut velit. Sed auctor, felis vel sagittis lobortis, arcu nisi ullamcorper massa, vel dignissim neque enim vitae neque. Sed vel odio vel enim volutpat hendrerit vel id nunc. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod felis non ex dictum, ut faucibus neque vestibulum. Nullam facilisis, diam a semper gravida, ipsum dolor egestas nisi, at aliquet ligula neque ut velit. Sed auctor, felis vel sagittis lobortis, arcu nisi ullamcorper massa, vel dignissim neque enim vitae neque. Sed vel odio vel enim volutpat hendrer</p>
+    </div>
+    <div>
+        <h1>Page de contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod felis non ex dictum, ut faucibus neque vestibulum. Nullam facilisis, diam a semper gravida, ipsum dolor egestas nisi, at aliquet ligula neque ut velit. Sed auctor, felis vel sagittis lobortis, arcu nisi ullamcorper massa, vel dignissim neque enim vitae neque. Sed vel odio vel enim volutpat hendrerit vel id nunc. Nulla facilisi.</p>
+        <div>
+            <form action="/submit_form" method="post">
+                <label for="name">Nom:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <script>
+        const btns = document.querySelectorAll('button');
+        const divs = document.querySelectorAll('div');
+        
+        btns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                divs.forEach(div => div.style.display = 'none');
+                divs[index].style.display = 'block';
+            });
+        });
+        
+    </script>
+
+</body>
+</html>
